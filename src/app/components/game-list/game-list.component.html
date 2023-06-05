@@ -1,0 +1,20 @@
+<h1 >Lista de Juegos</h1>
+<br>
+<div class="listjuegos" *ngFor="let game of games">
+
+  <div class="imglist">
+    <img   [src]="transform(game.Imagen_Juego)"  width="150" height="150">
+  </div>
+
+  <div class="listdescripcion">
+    <h5 class="card-title" [routerLink]="['/games/view/',game.id_Juego]" >{{game.Nombre_Juego}}</h5>
+    <p class="card-text">{{game.Descripcion_Juego}}</p>
+  </div>
+
+  <div class="button">
+    <button      [routerLink]="['/games/view/',game.id_Juego]" ><img src="../../../assets/image/game-controller.png" alt=""></button>
+    <button   [routerLink]="['/games/edit/',game.id_Juego]"  ><img src="../../../assets/image/modify.png" alt=""></button>
+    <button   (click)="deletegames(game.id_Juego)"  ><img src="../../../assets/image/delete.png" alt=""></button>
+  </div>
+
+</div>

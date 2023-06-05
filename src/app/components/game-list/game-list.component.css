@@ -1,0 +1,43 @@
+.listjuegos{
+  display:flex ;
+ border: 1px solid ;
+ margin-bottom: 10px;
+ border-radius: 15px;
+}
+
+.listdescripcion{
+  width: 70%;
+  justify-content: flex-start;
+  margin: 5% 0% 0% 5%;
+}
+
+.imglist{
+  margin: 5% 0% 5% 5%;
+  border-radius: 10px 10px purple solid;
+  box-shadow: 4px 4px 4px 4px rgb(172, 137, 255);
+}
+
+.imglist:hover{
+  opacity: 0.5;
+}
+
+.button{
+display: flex;
+width: fit-content;
+height: fit-content;
+margin: 7% 10% 0% 5%;
+  }
+
+.button button img{
+  width: 45px;
+  height: 45px;
+}
+
+  button{
+    border: none;
+    background-color: #ffffff;
+     width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    margin-right: 5px;
+  }

@@ -1,0 +1,39 @@
+<h1 class="row" *ngIf="edit == false">
+  Añadir Juegos
+</h1>
+<h1 class="row" *ngIf="edit == true">
+  Actualizar Juego
+</h1>
+<div class="container">
+<form>
+ <div class="form-group">
+   <label for="">Nombre del Juego:</label>
+   <input type="text" [(ngModel)]="game.Nombre_Juego" class="form-control" id="name"   name="nombrejuego" >
+ </div><br>
+ <div class="form-group">
+   <label for="">Imagen del Juego:</label>
+   <input type="url" [(ngModel)]="game.Imagen_Juego" class="form-control" id="Imagen"  name="imagenjuego" >
+ </div><br>
+ <div class="form-group">
+   <label for="">Descripcion:</label>
+   <textarea  name="Descripcion" [(ngModel)]="game.Descripcion_Juego" rows="2"  class="form-control" ></textarea>
+ </div><br>
+ <div class="form-group">
+   <label for="">Url del Juego:</label>
+   <input type="url" [(ngModel)]="game.Url_Juego" class="form-control" id="Url"  name="urljuego" >
+ </div><br>
+ <div class="form-group">
+   <label for="">Categoria del Juego:</label>
+   <input type="text" [(ngModel)]="game.id_Categoria" class="form-control" id="Categoria"   name="categoriajuego" >
+ </div>
+ <br>
+  <div class="form-group">
+   <input type="submit" class="btn btn-primary"  name="Enviar" (click)="edit ? UpdateGame() : Enviar()">
+</div>
+</form>
+</div>
+
+
+<div >
+
+</div>

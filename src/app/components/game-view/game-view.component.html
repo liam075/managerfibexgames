@@ -1,0 +1,20 @@
+<div>
+<div>
+    <h1 class="row">{{game.Nombre_Juego}}</h1>
+    <h3 class="row">{{game.id_Categoria}}</h3>
+</div>
+<br>
+<div >
+  <iframe id="item-direct-container" class="item-direct-container resizable" width="1100" height="700"
+  allow="autoplay" allowfullscreen="" frameborder="0" scrolling="no"
+
+  [src]="transform(game.Url_Juego)"
+  style="display: block;">
+  </iframe>
+</div>
+<br>
+<div class="container">
+
+  <p>{{game.Descripcion_Juego}}</p>
+</div>
+</div>
