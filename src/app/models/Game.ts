@@ -4,5 +4,5 @@ export interface Game{
   Imagen_Juego:string;
   Descripcion_Juego:string;
   Url_Juego:string;
-  id_Categoria:string;
+  Categoria_Juego:string;
 }

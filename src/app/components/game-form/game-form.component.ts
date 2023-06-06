@@ -19,7 +19,7 @@ export class GameFormComponent implements OnInit {
     Imagen_Juego:"",
     Descripcion_Juego:"",
     Url_Juego:"",
-    id_Categoria:""
+    Categoria_Juego:""
   };
   edit : boolean = false;
   params = this.activatedroute.snapshot.params;
@@ -37,7 +37,7 @@ export class GameFormComponent implements OnInit {
             this.game.Imagen_Juego = res[0].Imagen_Juego;
             this.game.Descripcion_Juego = res[0].Descripcion_Juego;
             this.game.Url_Juego = res[0].Url_Juego;
-            this.game.id_Categoria = res[0].id_Categoria;
+            this.game.Categoria_Juego = res[0].Categoria_Juego;
             this.edit = true;
           },
           err => console.error(err)

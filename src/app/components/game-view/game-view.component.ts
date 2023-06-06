@@ -22,7 +22,7 @@ export class GameViewComponent implements OnInit {
     Imagen_Juego:"",
     Descripcion_Juego:"",
     Url_Juego:"",
-    id_Categoria:""
+    Categoria_Juego:""
   }
   params = this.activatedroute.snapshot.params;
   constructor(private gamesService:GamesService , private router:Router ,private activatedroute :ActivatedRoute,private sanitizer: DomSanitizer) { }
@@ -39,7 +39,7 @@ export class GameViewComponent implements OnInit {
           this.game.Imagen_Juego = res[0].Imagen_Juego;
           this.game.Descripcion_Juego = res[0].Descripcion_Juego;
           this.game.Url_Juego = res[0].Url_Juego;
-          this.game.id_Categoria = res[0].id_Categoria;
+          this.game.Categoria_Juego = res[0].Categoria_Juego;
           console.log(this.game);
         },
         err => console.error(err)
