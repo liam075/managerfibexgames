@@ -28,7 +28,7 @@ export class GameViewComponent implements OnInit {
   constructor(private gamesService:GamesService , private router:Router ,private activatedroute :ActivatedRoute,private sanitizer: DomSanitizer) { }
 
   ngOnInit(): void {
-    const params = this.activatedroute.snapshot.params;
+  const params = this.activatedroute.snapshot.params;
     console.log(this.params['id']);
     if (this.params['id']){
       this.gamesService.getGame(this.params['id']).
