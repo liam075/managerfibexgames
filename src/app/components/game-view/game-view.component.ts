@@ -22,7 +22,8 @@ export class GameViewComponent implements OnInit {
     Imagen_Juego:"",
     Descripcion_Juego:"",
     Url_Juego:"",
-    Categoria_Juego:""
+    Categoria_Juego:"",
+    id_Suscripcion:0
   }
   params = this.activatedroute.snapshot.params;
   constructor(private gamesService:GamesService , private router:Router ,private activatedroute :ActivatedRoute,private sanitizer: DomSanitizer) { }

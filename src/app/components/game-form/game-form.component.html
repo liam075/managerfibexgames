@@ -27,6 +27,11 @@
    <input type="text" [(ngModel)]="game.Categoria_Juego" class="form-control" id="Categoria"   name="categoriajuego" >
  </div>
  <br>
+ <div class="form-group">
+   <label for="">Suscripciones del Juego:</label>
+   <input type="number" [(ngModel)]="game.id_Suscripcion" class="form-control" id="Suscripcion"   name="Suscripcionjuego" >
+ </div>
+ <br>
   <div class="form-group">
    <input type="submit" class="btn btn-primary"  name="Enviar" (click)="edit ? UpdateGame() : Enviar()">
 </div>

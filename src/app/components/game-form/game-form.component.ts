@@ -19,8 +19,10 @@ export class GameFormComponent implements OnInit {
     Imagen_Juego:"",
     Descripcion_Juego:"",
     Url_Juego:"",
-    Categoria_Juego:""
+    Categoria_Juego:"",
+    id_Suscripcion:0,
   };
+
   edit : boolean = false;
   params = this.activatedroute.snapshot.params;
   constructor(private gamesService:GamesService , private router:Router ,private activatedroute :ActivatedRoute ) { }
@@ -38,6 +40,7 @@ export class GameFormComponent implements OnInit {
             this.game.Descripcion_Juego = res[0].Descripcion_Juego;
             this.game.Url_Juego = res[0].Url_Juego;
             this.game.Categoria_Juego = res[0].Categoria_Juego;
+            this.game.id_Suscripcion=res[0].id_id_Suscripcion;
             this.edit = true;
           },
           err => console.error(err)
