@@ -1,0 +1,7 @@
+.cajaBoton{
+  display:flex ;
+  border: 1px solid ;
+  margin-bottom: 10px;
+  padding: 5px 10px 10px 10px;
+  width: 1100px;
+}

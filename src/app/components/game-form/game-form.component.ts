@@ -1,7 +1,7 @@
 import { Component, OnInit , HostBinding} from '@angular/core';
 import {Game} from '../../models/Game';
 import {GamesService} from '../../services/games.service';
-import { Redirect } from 'react-router-dom';
+//import { Redirect } from 'react-router-dom';
 import {  Router,ActivatedRoute } from '@angular/router';
 
 

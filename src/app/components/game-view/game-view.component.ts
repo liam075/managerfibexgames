@@ -25,6 +25,7 @@ export class GameViewComponent implements OnInit {
     Categoria_Juego:"",
     id_Suscripcion:0
   }
+  expandir = false;
   params = this.activatedroute.snapshot.params;
   constructor(private gamesService:GamesService , private router:Router ,private activatedroute :ActivatedRoute,private sanitizer: DomSanitizer) { }
 
@@ -50,6 +51,10 @@ export class GameViewComponent implements OnInit {
 
   transform(url:string) {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+
+  Expandir(){
+    this.expandir= true;
   }
 
 }
